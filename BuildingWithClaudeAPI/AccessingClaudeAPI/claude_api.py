@@ -62,7 +62,6 @@ def json_chat(user_input, system, temperature):
     )
     add_assistant_message(messages, response.content[0].text)
     return response.content[0].text
-    
 
 def chatbot(system="", temperature=1.0):
     messages = []
@@ -87,7 +86,6 @@ def json_example():
 
 def main():
     json_example()
-    
 
 if __name__ == "__main__":
     main()
