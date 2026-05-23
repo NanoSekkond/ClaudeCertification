@@ -1,0 +1,77 @@
+[
+    {
+        "input": "What regex should I use to remove all double spaces in a string?",
+        "test_cases": [
+            "hello  world   ",
+            "hi I'm  a     text"
+        ],
+        "outputs": [
+            "hello world ",
+            "hi I'm a text"
+        ],
+        "task": "Substitution",
+        "replacement": " "
+    },
+    {
+        "input": "How can I validate an email address with regex?",
+        "test_cases": [
+            "user@example.com",
+            "invalid.email@",
+            "@example.com"
+        ],
+        "outputs": [
+            true,
+            false,
+            false
+        ],
+        "task": "Validation"
+    },
+    {
+        "input": "What regex pattern should I use to extract all phone numbers from text?",
+        "test_cases": [
+            "Call me at 555-1234 or 555.9876",
+            "No numbers here"
+        ],
+        "outputs": [
+            [
+                "555-1234",
+                "555.9876"
+            ],
+            []
+        ],
+        "task": "Matching"
+    },
+    {
+        "input": "How do I remove all special characters from a string?",
+        "test_cases": [
+            "hello@world#123!",
+            "test$string%"
+        ],
+        "outputs": [
+            "helloworld123",
+            "teststring"
+        ],
+        "task": "Substitution",
+        "replacement": ""
+    },
+    {
+        "input": "What regex can I use to find all HTML tags in a document?",
+        "test_cases": [
+            "<div>Hello</div>",
+            "<p>Text</p> and <span>more</span>"
+        ],
+        "outputs": [
+            [
+                "<div>",
+                "</div>"
+            ],
+            [
+                "<p>",
+                "</p>",
+                "<span>",
+                "</span>"
+            ]
+        ],
+        "task": "Matching"
+    }
+]
